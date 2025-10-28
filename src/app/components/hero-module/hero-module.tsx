@@ -1,12 +1,14 @@
 import './hero-module.css';
 
 import { Sora } from 'next/font/google';
-
 import { FaMagic } from 'react-icons/fa';
+
+import content from "../../content/content";
 
 const sora = Sora({ subsets: ['latin'] });
 
 const HeroModule = () => {
+  const { heroModule } = content;
   return (
     <section
       className='hero-module'
@@ -14,7 +16,7 @@ const HeroModule = () => {
     >
       <div className='intro'>
         <FaMagic />
-        <span>Introducing AI Automation</span>
+        <span>{heroModule.intro}</span>
       </div>
       <div className='tag-line'>
         <span>
@@ -23,32 +25,29 @@ const HeroModule = () => {
         </span>
       </div>
       <div className='info'>
-        <span>We Engineer your software success to digital transformation</span>
+        <span>{heroModule.info}</span>
       </div>
       <div className='description'>
         <span>
-          At Chromezy, we translate your ideas into market-ready solutions
-          quickly and precisely. Laveraging the power of technology and
-          prioritizing user needs, we deliver products the are both cutting edge
-          and user-centric.
+          {heroModule.description}
         </span>
       </div>
       <div className='stats'>
         <div>
-          <span>200%</span>
-          <span>Revenue Growth</span>
+          <span>{heroModule.stats.revenue.value}</span>
+          <span>{heroModule.stats.revenue.label}</span>
         </div>
         <div>
-          <span>4x</span>
-          <span>Speed to Market</span>
+          <span>{heroModule.stats.speed.value}</span>
+          <span>{heroModule.stats.speed.label}</span>
         </div>
         <div>
-          <span>73%</span>
-          <span>New Order</span>
+          <span>{heroModule.stats.orders.value}</span>
+          <span>{heroModule.stats.orders.label}</span>
         </div>
         <div>
-          <span>10K+</span>
-          <span>Active Users</span>
+          <span>{heroModule.stats.users.value}</span>
+          <span>{heroModule.stats.users.label}</span>
         </div>
       </div>
       <hr />

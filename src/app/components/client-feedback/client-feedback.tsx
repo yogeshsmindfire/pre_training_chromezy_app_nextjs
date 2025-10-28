@@ -1,34 +1,35 @@
 import Image from 'next/image';
 import './client-feedback.css';
 
+import content from "../../content/content";
+
 import KiriLogo from '../../../../public/client-feedback/kiri-logo.svg';
 import Quote from '../../../../public/client-feedback/quote.svg';
 
 const ClientFeedback = () => {
+  const { clientFeedback } = content;
   return (
     <section className='client-feedback'>
-      <h1 className='feedback-header'>Our Happy Clients</h1>
+      <h1 className='feedback-header'>{clientFeedback.title}</h1>
       <p className='description'>
-        Dummy Ipsum dolor sit amet, consectetur adipiscing elit
+        {clientFeedback.description}
       </p>
       <div className='feedback-cards'>
         <div className='feedback-card'>
           <Image src={Quote} alt='quote' />
           <p className='description'>
-            Highly responsive with keen attension to detail. Assisted in
-            building my e-commerce platform, mapping transformative areas,
-            resulting in exception customer experience.
+            {clientFeedback.feedbackCards[0].description}
           </p>
           <div className='client-user-info'>
-            <p className='client-user-name'>BRANDON LAU</p>
-            <p className='client-user-title'>(CEO) Kiri Journey</p>
+            <p className='client-user-name'>{clientFeedback.feedbackCards[0].clientName}</p>
+            <p className='client-user-title'>{clientFeedback.feedbackCards[0].clientTitle}</p>
             <hr />
           </div>
           <div className='client-firm-details'>
             <div className='project-details'>
-              <span>Star Rating - 5/5</span>
-              <span>Project - E-commerce Development</span>
-              <span>Country - HongKong</span>
+              <span>Star Rating - {clientFeedback.feedbackCards[0].rating}</span>
+              <span>Project - {clientFeedback.feedbackCards[0].project}</span>
+              <span>Country - {clientFeedback.feedbackCards[0].country}</span>
             </div>
             <div className='client-logo'>
               <Image
@@ -43,21 +44,18 @@ const ClientFeedback = () => {
         <div className='feedback-card'>
           <Image src={Quote} alt='quote' />
           <p className='description'>
-            They are swift to respond and implement faster. Thanks to Chromezy
-            for providing expert developers and on-time deliver to help scale
-            our cloud-based ERP SaaS that helps us automate workflow, and get an
-            analytics dashboard for swift decision making.
+            {clientFeedback.feedbackCards[1].description}
           </p>
           <div className='client-user-info'>
-            <p className='client-user-name'>MAC DOLLON</p>
-            <p className='client-user-title'>(CTO) MasterStudy</p>
+            <p className='client-user-name'>{clientFeedback.feedbackCards[1].clientName}</p>
+            <p className='client-user-title'>{clientFeedback.feedbackCards[1].clientTitle}</p>
             <hr />
           </div>
           <div className='client-firm-details'>
             <div className='project-details'>
-              <span>Star Rating - 5/5</span>
-              <span>Project - SaaS based cloud ERP</span>
-              <span>Country - United States</span>
+              <span>Star Rating - {clientFeedback.feedbackCards[1].rating}</span>
+              <span>Project - {clientFeedback.feedbackCards[1].project}</span>
+              <span>Country - {clientFeedback.feedbackCards[1].country}</span>
             </div>
             <div className='client-logo'>
               <Image
@@ -72,20 +70,18 @@ const ClientFeedback = () => {
         <div className='feedback-card'>
           <Image src={Quote} alt='quote' />
           <p className='description'>
-            Highly responsive with keen attension to detail. Assisted in
-            building my e-commerce platform, mapping transformative areas,
-            resulting in exception customer experience.
+            {clientFeedback.feedbackCards[2].description}
           </p>
           <div className='client-user-info'>
-            <p className='client-user-name'>BRANDON LAU</p>
-            <p className='client-user-title'>(CEO) Kiri Journey</p>
+            <p className='client-user-name'>{clientFeedback.feedbackCards[2].clientName}</p>
+            <p className='client-user-title'>{clientFeedback.feedbackCards[2].clientTitle}</p>
             <hr />
           </div>
           <div className='client-firm-details'>
             <div className='project-details'>
-              <span>Star Rating - 5/5</span>
-              <span>Project - E-commerce Development</span>
-              <span>Country - HongKong</span>
+              <span>Star Rating - {clientFeedback.feedbackCards[2].rating}</span>
+              <span>Project - {clientFeedback.feedbackCards[2].project}</span>
+              <span>Country - {clientFeedback.feedbackCards[2].country}</span>
             </div>
             <div className='client-logo'>
               <Image
