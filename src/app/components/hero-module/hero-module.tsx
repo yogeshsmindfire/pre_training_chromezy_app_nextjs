@@ -3,7 +3,7 @@ import './hero-module.css';
 import { Sora } from 'next/font/google';
 import { FaMagic } from 'react-icons/fa';
 
-import content from "../../content/content";
+import content from '../../content/content';
 
 const sora = Sora({ subsets: ['latin'] });
 
@@ -28,9 +28,7 @@ const HeroModule = () => {
         <span>{heroModule.info}</span>
       </div>
       <div className='description'>
-        <span>
-          {heroModule.description}
-        </span>
+        <span>{heroModule.description}</span>
       </div>
       <div className='stats'>
         <div>

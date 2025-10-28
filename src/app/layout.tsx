@@ -8,5 +8,5 @@ export default function RootLayout({
       <head></head>
       <body style={{ margin: '0px', padding: '0px' }}>{children}</body>
     </html>
-  )
+  );
 }

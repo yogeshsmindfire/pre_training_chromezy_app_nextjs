@@ -7,7 +7,7 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint . && prettier --check .",
-    "format": "prettier --write .",
+    "format": "eslint ./src --fix && prettier --write .",
     "format:check": "prettier --check .",
     "prepare": "husky"
   },

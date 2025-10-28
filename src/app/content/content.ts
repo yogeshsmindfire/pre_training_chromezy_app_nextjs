@@ -61,29 +61,29 @@ const content = {
       {
         description:
           'Highly responsive with keen attension to detail. Assisted in building my e-commerce platform, mapping transformative areas, resulting in exception customer experience.',
-        clientName: "BRANDON LAU",
-        clientTitle: "(CEO) Kiri Journey",
-        rating: "5/5",
-        project: "Project - E-commerce Development",
-        country: "HongKong"
+        clientName: 'BRANDON LAU',
+        clientTitle: '(CEO) Kiri Journey',
+        rating: '5/5',
+        project: 'Project - E-commerce Development',
+        country: 'HongKong',
       },
       {
         description:
           'They are swift to respond and implement faster. Thanks to Chromezy for providing expert developers and on-time deliver to help scale our cloud-based ERP SaaS that helps us automate workflow, and get an analytics dashboard for swift decision making.',
-        clientName: "MAC DOLLON",
-        clientTitle: "(CTO) MasterStudy",
-        rating: "5/5",
-        project: "Project - SaaS based cloud ERP",
-        country: "United States"
+        clientName: 'MAC DOLLON',
+        clientTitle: '(CTO) MasterStudy',
+        rating: '5/5',
+        project: 'Project - SaaS based cloud ERP',
+        country: 'United States',
       },
       {
         description:
           'Highly responsive with keen attension to detail. Assisted in building my e-commerce platform, mapping transformative areas, resulting in exception customer experience.',
-        clientName: "BRANDON LAU",
-        clientTitle: "(CEO) Kiri Journey",
-        rating: "5/5",
-        project: "Project - E-commerce Development",
-        country: "HongKong"
+        clientName: 'BRANDON LAU',
+        clientTitle: '(CEO) Kiri Journey',
+        rating: '5/5',
+        project: 'Project - E-commerce Development',
+        country: 'HongKong',
       },
     ],
   },
