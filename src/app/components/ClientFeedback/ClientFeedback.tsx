@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import './client-feedback.css';
+import './ClientFeedback.css';
 
 import content from '../../content/content';
 

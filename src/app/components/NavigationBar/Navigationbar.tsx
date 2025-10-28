@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { FaSearch } from 'react-icons/fa';
 
-import './navigation-bar.css';
+import './NavigationBar.css';
 
 import appLogo from '../../../../public/app-logo.svg';
 

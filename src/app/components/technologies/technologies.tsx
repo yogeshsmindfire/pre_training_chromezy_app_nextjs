@@ -2,7 +2,7 @@
 
 'use client'; // For Next.js App Router
 
-import styles from './technologies.module.css';
+import styles from './Technologies.module.css';
 
 import technologiesGraphic from '../../../../public/technologies-graphic.png';
 import Image from 'next/image';

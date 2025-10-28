@@ -4,7 +4,7 @@
 
 import { useState } from 'react';
 import { MailOpen } from 'lucide-react';
-import './contact-form.css'; // Import the CSS module
+import './ContactForm.css'; // Import the CSS module
 import Image from 'next/image';
 
 import contactUs from '../../../../public/contact-form/contactUs.png';
@@ -107,7 +107,7 @@ const ContactForm = () => {
                 <textarea
                   id='message'
                   name='message'
-                  rows='4'
+                  rows={4}
                   value={formData.message}
                   onChange={handleChange}
                   className='textarea'

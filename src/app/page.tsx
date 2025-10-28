@@ -2,21 +2,21 @@
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
-import HeroModule from '@/app/components/hero-module/hero-module';
-import NavigationBar from '@/app/components/navigation-bar/navigation-bar';
+import HeroModule from '@/app/components/HeroModule/HeroModule';
+import NavigationBar from '@/app/components/NavigationBar/Navigationbar';
 
 import Ball from '../../public/ball.png';
 import Triangle from '../../public/triangle-transparent.png';
 
 import './app.css';
-import Clients from './components/clients/clients';
-import Services from './components/services/services';
-import ClientFeedback from './components/client-feedback/client-feedback';
-import Footer from './components/footer/footer';
-import ContactForm from './components/contact-form/contact-form';
-import CustomerInsights from './components/customer-insights/customer-insights';
-import TechnologiesSection from './components/technologies/technologies';
-import SuccessStories from './components/success-stories/success-stories';
+import Clients from './components/Clients/Clients';
+import Services from './components/Services/Services';
+import ClientFeedback from './components/ClientFeedback/ClientFeedback';
+import Footer from './components/Footer/Footer';
+import ContactForm from './components/ContactForm/ContactForm';
+import CustomerInsights from './components/CustomerInsights/CustomerInsights';
+import TechnologiesSection from './components/Technologies/Technologies';
+import SuccessStories from './components/SuccessStories/SuccessStories';
 
 const Page = () => {
   const [scrollPosition, setScrollPosition] = useState(0);

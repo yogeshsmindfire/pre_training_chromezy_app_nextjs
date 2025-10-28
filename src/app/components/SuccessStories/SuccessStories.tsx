@@ -4,7 +4,7 @@
 
 import Image from 'next/image';
 import { ArrowUpRight } from 'lucide-react';
-import './success-stories.css';
+import './SuccessStories.css';
 
 import successStories1 from '../../../../public/success-stories/success-stories1.png';
 import successStories2 from '../../../../public/success-stories/success-stories2.png';

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './footer.module.css'; // We'll create this CSS file next
+import styles from './Footer.module.css'; // We'll create this CSS file next
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import Image from 'next/image';
 

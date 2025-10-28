@@ -1,4 +1,4 @@
-import './hero-module.css';
+import './HeroModule.css';
 
 import { Sora } from 'next/font/google';
 import { FaMagic } from 'react-icons/fa';

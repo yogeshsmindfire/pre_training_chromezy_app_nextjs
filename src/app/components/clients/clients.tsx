@@ -1,5 +1,5 @@
 import Image from "next/image";
-import "./clients.css";
+import "./Clients.css";
 
 import MasterStudyLogo from "../../../../public/clients/masterStudy.png";
 import FonniaLogo from "../../../../public/clients/fonnia.png";

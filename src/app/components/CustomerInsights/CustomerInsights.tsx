@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { ArrowUpRight } from 'lucide-react';
-import styles from './customer-insights.module.css';
+import styles from './CustomerInsights.module.css';
 
 import insightsImage1 from '../../../../public/customer-insights/insghts-1.png';
 import insightsImage2 from '../../../../public/customer-insights/insghts-2.png';
