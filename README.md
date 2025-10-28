@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chromezy - Landing Page Showcase
+
+This project is a responsive landing page for a modern tech company, built with Next.js and TypeScript. It features a parallax scrolling effect and showcases the company's services, client feedback, success stories, and technologies.
+
+## Design Reference
+
+The UI/UX design for this application can be found on Figma:
+[Parallax Scroll | Full Landing Page Showcase](https://www.figma.com/design/GQDJl7HXZ4hohNj15HE5hN/Parallax-Scroll--Full-Landing-Page-Showcase--Community-?node-id=2014-10769&t=1oN0lRLAegrV6xV8-0)
+
+## Folder Structure
+
+The project follows a standard Next.js structure:
+
+```
+.
+├── public/              # Static assets (images, fonts, etc.)
+├── src/
+│   └── app/             # Main application source code
+│       ├── components/  # Reusable React components
+│       ├── content/     # Content for the components
+│       ├── app.css      # Global styles
+│       ├── layout.tsx   # Main layout component
+│       └── page.tsx     # The main landing page
+├── .gitignore           # Files to be ignored by Git
+├── next.config.ts       # Next.js configuration
+├── package.json         # Project dependencies and scripts
+└── README.md            # This file
+```
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running, follow these simple steps.
 
-```bash
+### Prerequisites
+
+You need to have Node.js and npm installed on your machine.
+
+### Installation
+
+1.  Clone the repo
+    ```sh
+    git clone <repository-url>
+    ```
+2.  Navigate to the project directory
+    ```sh
+    cd pre_training_chromezy_app_nextjs
+    ```
+3.  Install NPM packages
+    ```sh
+    npm install
+    ```
+
+### Running the Application
+
+To run the application in development mode, use the following command. This will start the development server on `http://localhost:3000`.
+
+```sh
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Building for Production
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To build the application for production, use the following command:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```sh
+npm run build
+```
 
-## Learn More
+This will create an optimized production build of the application.
 
-To learn more about Next.js, take a look at the following resources:
+To run the production build locally, use:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```sh
+npm run start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Linting and Formatting
 
-## Deploy on Vercel
+This project uses ESLint and Prettier for code quality and consistency.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To check for linting errors:
+```sh
+npm run lint
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To automatically fix linting and formatting issues:
+```sh
+npm run format
+```
