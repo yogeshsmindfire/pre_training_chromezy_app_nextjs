@@ -1,10 +1,8 @@
-// components/ContactForm.js
-
-'use client'; // For Next.js App Router
+'use client';
 
 import { useState } from 'react';
 import { MailOpen } from 'lucide-react';
-import './ContactForm.css'; // Import the CSS module
+import './ContactForm.css';
 import Image from 'next/image';
 
 import contactUs from '../../../../public/contact-form/contactUs.png';
@@ -37,14 +35,10 @@ const ContactForm = () => {
 
   return (
     <section className='contact-form'>
-      {/* Main Container */}
       <div className='container'>
-        {/* Left Column (Info & Illustration) */}
         <div className='leftColumn'>
           <Image src={contactUs} alt='contactUs' width={500} height={600} />
         </div>
-
-        {/* Right Column (Form) */}
         <div className='rightColumn'>
           <div className='contactForm'>
             <MailOpen className='decorativeIcon' size={80} strokeWidth={1} />

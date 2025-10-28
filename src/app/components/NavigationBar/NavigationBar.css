@@ -39,19 +39,19 @@
 
       ::placeholder {
         color: red;
-        opacity: 1; /* Firefox */
+        opacity: 1; 
       }
 
       ::-ms-input-placeholder {
-        /* Edge 12 -18 */
+        
         color: red;
       }
     }
   }
 
   .links {
-    /* border-bottom: 2px solid #252d4c; */
-    /* gap: 20px; */
+    
+    
     display: flex;
     padding-bottom: -2px;
 
@@ -63,7 +63,7 @@
 
     div {
       font-size: 14px;
-      /* padding: 5px; */
+      
       padding-bottom: 10px;
       border-bottom: 2px solid #252d4c;
       padding: 15px;

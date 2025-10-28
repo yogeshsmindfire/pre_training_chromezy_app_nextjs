@@ -1,10 +1,10 @@
-/* Footer.css */
+
 
 .footerContainer {
-  background-color: #0b0f19; /* Dark background from the image */
-  color: #a6a6a6; /* Light gray text for general content */
-  padding: 60px 80px 30px; /* Adjust padding as needed */
-  font-family: Arial, sans-serif; /* Example font */
+  background-color: #0b0f19; 
+  color: #a6a6a6; 
+  padding: 60px 80px 30px; 
+  font-family: Arial, sans-serif; 
   width: 100vw;
 }
 
@@ -12,10 +12,10 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
-  max-width: 1200px; /* Limit content width */
+  max-width: 1200px; 
   margin-left: auto;
   margin-right: auto;
-  gap: 40px; /* Space between sections */
+  gap: 40px; 
 }
 
 .footerSection {
@@ -23,9 +23,9 @@
   min-width: 200px;
 }
 
-/* Company Info Section */
+
 .companyInfo {
-  flex: 1.5; /* Give more space to company info */
+  flex: 1.5; 
   max-width: 350px;
 }
 
@@ -33,7 +33,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  color: #5d97f2; /* Blue color for logo from image */
+  color: #5d97f2; 
   font-size: 24px;
   font-weight: bold;
 }
@@ -63,16 +63,16 @@
 
 .contactIcon {
   margin-right: 10px;
-  color: #5d97f2; /* Blue icon color */
-  font-size: 18px; /* Adjust icon size */
+  color: #5d97f2; 
+  font-size: 18px; 
 }
 
-/* Navigation Links Section */
+
 .navigationLinks {
   display: flex;
-  gap: 50px; /* Space between the two columns of links */
+  gap: 50px; 
   flex: 1.2;
-  justify-content: flex-end; /* Align to the right in its space */
+  justify-content: flex-end; 
 }
 
 .navColumn {
@@ -89,52 +89,52 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 10px; /* Space for the arrow */
+  padding-right: 10px; 
   transition: color 0.3s ease;
   margin-bottom: 20px;
 }
 
 .footerCtaItem:not(.highlight) {
-  color: #ffffff; /* Lighter on hover */
+  color: #ffffff; 
 }
 
 .footerNavItem:hover,
 .footerCtaItem:not(.highlight):hover {
-  color: #ffffff; /* Lighter on hover */
+  color: #ffffff; 
 }
 
 .footerNavItem .arrow,
 .footerCtaItem .arrow {
-  color: #4a4a4a; /* Darker arrow color */
+  color: #4a4a4a; 
   margin-left: 15px;
 }
 
-/* Call to Action Section */
+
 .callToAction {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Align to top */
+  justify-content: flex-start; 
   flex: 0.8;
-  text-align: right; /* Align text to the right within its section */
+  text-align: right; 
 }
 
 .footerCtaItem {
   font-weight: bold;
   font-size: 18px;
   margin-bottom: 25px;
-  padding-right: 0; /* No extra padding for CTA items */
+  padding-right: 0; 
 }
 
 .footerCtaItem.highlight {
-  color: #5d97f2; /* Blue color for the "Work with us" button */
-  font-size: 20px; /* Larger font for highlight */
+  color: #5d97f2; 
+  font-size: 20px; 
 }
 
 .footerCtaItem.highlight:hover {
-  color: #8ac0ff; /* Lighter blue on hover */
+  color: #8ac0ff; 
 }
 
-/* General Link Styling */
+
 .footerLink {
   color: #a6a6a6;
   text-decoration: none;
@@ -146,15 +146,15 @@
   color: #ffffff;
 }
 
-/* Footer Bottom Section */
+
 .footerBottom {
-  border-top: 1px solid #2a2a2a; /* Subtle divider */
+  border-top: 1px solid #2a2a2a; 
   padding-top: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 13px;
-  color: #777; /* Slightly darker gray for bottom text */
+  color: #777; 
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;

@@ -1,5 +1,3 @@
-// components/FeaturedInsights.js
-
 import Image from 'next/image';
 import { ArrowUpRight } from 'lucide-react';
 import styles from './CustomerInsights.module.css';
@@ -11,28 +9,28 @@ import insightsImage3 from '../../../../public/customer-insights/insghts-3.png';
 const insightsData = [
   {
     id: 1,
-    image: insightsImage1, // Placeholder image path
+    image: insightsImage1,
     title: 'Successful MVP Launches That Changed the Game.',
     description:
       'Discover the secrets behind game-changing MVP launches! From lean startups to industry giants, explore how these innovative launches disrupted markets and paved the way for success. Click to uncover the strategies that revolutionized product development.',
-    link: '#', // Replace with actual link
+    link: '#',
   },
   {
     id: 2,
-    image: insightsImage2, // Placeholder image path
+    image: insightsImage2,
     title: 'How Our AI Product Development Company is Pioneering Innovation?',
     description:
       'Discover how our product development company pioneers innovation. From groundbreaking technologies to creative strategies, we’re shaping the future. Click to explore our journey and join us in revolutionizing industries.',
-    link: '#', // Replace with actual link
+    link: '#',
   },
   {
     id: 3,
-    image: insightsImage3, // Placeholder image path
+    image: insightsImage3,
     title:
       'Optimizing E-commerce Sales With AI-Driven Product Recommendations.',
     description:
       'Boost your e-commerce sales with AI-powered product recommendations. Learn how smart algorithms can enhance customer experience and drive conversions. Read our blog for actionable insights!',
-    link: '#', // Replace with actual link
+    link: '#',
   },
 ];
 

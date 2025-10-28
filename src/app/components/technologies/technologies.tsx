@@ -1,13 +1,10 @@
-// components/TechnologiesSection.js
-
-'use client'; // For Next.js App Router
+'use client';
 
 import styles from './Technologies.module.css';
 
 import technologiesGraphic from '../../../../public/technologies-graphic.png';
 import Image from 'next/image';
 
-// Data for the technologies list
 const techData = [
   {
     id: '01',
@@ -56,7 +53,6 @@ const TechnologiesSection = () => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        {/* Left Column (Info Card) */}
         <div className={styles.leftColumn}>
           <h1>INNOVATIVE TECHNOLOGIES KEEPING US AHEAD</h1>
           <p>
@@ -64,7 +60,6 @@ const TechnologiesSection = () => {
             to your business&apos;s distinct requirements.
           </p>
           <div className={styles.imagePlaceholder}>
-            {/* You would place your <Image> component here */}
             <span>
               <Image
                 src={technologiesGraphic}
@@ -76,7 +71,6 @@ const TechnologiesSection = () => {
           </div>
         </div>
 
-        {/* Right Column (Tech List) */}
         <div className={styles.rightColumn}>
           <div className={styles.techList}>
             {techData.map((category) => (
@@ -87,9 +81,6 @@ const TechnologiesSection = () => {
                   <div className={styles.tagsContainer}>
                     {category.tags.map((tag) => (
                       <span key={tag} className={styles.tag}>
-                        {/* In a real app, you might have a function 
-                          to show an icon based on the tag name.
-                        */}
                         {tag}
                       </span>
                     ))}
