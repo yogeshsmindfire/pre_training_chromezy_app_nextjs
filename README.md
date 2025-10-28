@@ -79,11 +79,13 @@ npm run start
 This project uses ESLint and Prettier for code quality and consistency.
 
 To check for linting errors:
+
 ```sh
 npm run lint
 ```
 
 To automatically fix linting and formatting issues:
+
 ```sh
 npm run format
 ```

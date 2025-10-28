@@ -6,6 +6,8 @@ describe('CustomerInsights', () => {
     render(<CustomerInsights />);
 
     expect(screen.getByText('FEATURED INSIGHTS')).toBeInTheDocument();
-    expect(screen.getByText(/Were you looking to explore a specific topic/)).toBeInTheDocument();
+    expect(
+      screen.getByText(/Were you looking to explore a specific topic/),
+    ).toBeInTheDocument();
   });
 });

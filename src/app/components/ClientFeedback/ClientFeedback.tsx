@@ -38,12 +38,7 @@ const ClientFeedback = () => {
               <span>Country - {clientFeedback.feedbackCards[0].country}</span>
             </div>
             <div className='client-logo'>
-              <Image
-                src={KiriLogo}
-                alt='client-logo'
-                width={80}
-                height={40}
-              />
+              <Image src={KiriLogo} alt='client-logo' width={80} height={40} />
             </div>
           </div>
         </div>
@@ -102,7 +97,7 @@ const ClientFeedback = () => {
               <span>Country - {clientFeedback.feedbackCards[2].country}</span>
             </div>
             <div className='client-logo apache'>
-              <Image src={ApacheLogo} alt="apache-logo" />
+              <Image src={ApacheLogo} alt='apache-logo' />
             </div>
           </div>
         </div>

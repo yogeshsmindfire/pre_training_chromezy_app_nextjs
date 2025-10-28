@@ -6,6 +6,10 @@ describe('ClientFeedback', () => {
     render(<ClientFeedback />);
 
     expect(screen.getByText('Our Happy Clients')).toBeInTheDocument();
-    expect(screen.getByText('Dummy Ipsum dolor sit amet, consectetur adipiscing elit')).toBeInTheDocument();
+    expect(
+      screen.getByText(
+        'Dummy Ipsum dolor sit amet, consectetur adipiscing elit',
+      ),
+    ).toBeInTheDocument();
   });
 });

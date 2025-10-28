@@ -8,7 +8,11 @@ jest.mock('@/app/components/HeroModule/HeroModule', () => {
   return MockHeroModule;
 });
 jest.mock('@/app/components/NavigationBar/Navigationbar', () => {
-  const MockNavigationBar = ({ scrollPosition }: { scrollPosition: number }) => <div>NavigationBar scroll: {scrollPosition}</div>;
+  const MockNavigationBar = ({
+    scrollPosition,
+  }: {
+    scrollPosition: number;
+  }) => <div>NavigationBar scroll: {scrollPosition}</div>;
   MockNavigationBar.displayName = 'NavigationBar';
   return MockNavigationBar;
 });
@@ -74,11 +78,11 @@ describe('Page', () => {
 
     // Check if the scroll position is updated
     expect(screen.getByText('NavigationBar scroll: 500')).toBeInTheDocument();
-    
+
     // Also check the parallax style update
     const triangleImage = screen.getByAltText('triangle');
     expect(triangleImage).toHaveStyle('transform: translateY(-25px)');
-    
+
     const ballImage = screen.getByAltText('ball');
     expect(ballImage).toHaveStyle('transform: translate(-25px, 25px)');
   });

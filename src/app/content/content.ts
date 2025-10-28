@@ -1,5 +1,3 @@
-import { title } from 'process';
-
 const content = {
   heroModule: {
     intro: 'Introducing AI Automation',
