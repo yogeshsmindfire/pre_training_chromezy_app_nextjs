@@ -7,7 +7,7 @@ import { MailOpen } from 'lucide-react';
 import './contact-form.css'; // Import the CSS module
 import Image from 'next/image';
 
-import contactUs from '../../../../public/contactUs.png';
+import contactUs from '../../../../public/contact-form/contactUs.png';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({

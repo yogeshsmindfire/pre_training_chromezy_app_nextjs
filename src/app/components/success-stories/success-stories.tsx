@@ -6,11 +6,11 @@ import Image from 'next/image';
 import { ArrowUpRight } from 'lucide-react';
 import './success-stories.css';
 
-import successStories1 from '../../../../public/success-stories1.png';
-import successStories2 from '../../../../public/success-stories2.png';
-import successStories3 from '../../../../public/success-stories3.png';
-import successStories4 from '../../../../public/success-stories4.png';
-import successStories5 from '../../../../public/success-stories5.png';
+import successStories1 from '../../../../public/success-stories/success-stories1.png';
+import successStories2 from '../../../../public/success-stories/success-stories2.png';
+import successStories3 from '../../../../public/success-stories/success-stories3.png';
+import successStories4 from '../../../../public/success-stories/success-stories4.png';
+import successStories5 from '../../../../public/success-stories/success-stories5.png';
 
 // Mock data for the success stories
 const storiesData = [
