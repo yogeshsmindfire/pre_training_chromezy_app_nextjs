@@ -33,6 +33,7 @@
   .client-user-info {
     text-align: right;
     padding-right: 20px;
+    margin-top: 20px;
 
     p {
       margin: 0px auto;
@@ -69,8 +70,19 @@
 
     .client-logo {
       width: 100px;
-      padding-left: 35px;
+      padding-top: 40px;
+      padding-left: 20px;
       margin-top: -35px;
+
+      img {
+        filter: invert();
+      }
+    }
+
+    .client-logo.apache {
+      img {
+        filter: grayscale(0);
+      }
     }
   }
 }

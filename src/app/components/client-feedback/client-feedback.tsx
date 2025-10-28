@@ -3,7 +3,9 @@ import './client-feedback.css';
 
 import content from '../../content/content';
 
-import KiriLogo from '../../../../public/client-feedback/kiri-logo.svg';
+import KiriLogo from '../../../../public/clients/kiri.png';
+import MasterStudyLogo from '../../../../public/clients/masterStudy.png';
+import ApacheLogo from '../../../../public/clients/apache.svg';
 import Quote from '../../../../public/client-feedback/quote.svg';
 
 const ClientFeedback = () => {
@@ -39,8 +41,8 @@ const ClientFeedback = () => {
               <Image
                 src={KiriLogo}
                 alt='client-logo'
-                width={100}
-                height={100}
+                width={80}
+                height={40}
               />
             </div>
           </div>
@@ -69,10 +71,10 @@ const ClientFeedback = () => {
             </div>
             <div className='client-logo'>
               <Image
-                src={KiriLogo}
+                src={MasterStudyLogo}
                 alt='client-logo'
-                width={100}
-                height={100}
+                width={80}
+                height={25}
               />
             </div>
           </div>
@@ -99,13 +101,8 @@ const ClientFeedback = () => {
               <span>Project - {clientFeedback.feedbackCards[2].project}</span>
               <span>Country - {clientFeedback.feedbackCards[2].country}</span>
             </div>
-            <div className='client-logo'>
-              <Image
-                src={KiriLogo}
-                alt='client-logo'
-                width={100}
-                height={100}
-              />
+            <div className='client-logo apache'>
+              <Image src={ApacheLogo} alt="apache-logo" />
             </div>
           </div>
         </div>

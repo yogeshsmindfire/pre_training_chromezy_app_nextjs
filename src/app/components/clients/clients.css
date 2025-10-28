@@ -1,8 +1,12 @@
 .clients {
   ul {
     display: flex;
-    gap: 80px;
+    gap: 50px;
     list-style-type: none;
+
+    img {
+      filter: invert()
+    }
   }
 }
 
