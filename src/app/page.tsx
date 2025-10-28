@@ -13,7 +13,7 @@ import Clients from './components/Clients/Clients';
 import Services from './components/Services/Services';
 import ClientFeedback from './components/ClientFeedback/ClientFeedback';
 import Footer from './components/Footer/Footer';
-import ContactForm from './components/ContactForm/ContactForm';
+
 import CustomerInsights from './components/CustomerInsights/CustomerInsights';
 import TechnologiesSection from './components/Technologies/Technologies';
 import SuccessStories from './components/SuccessStories/SuccessStories';
@@ -64,7 +64,7 @@ const Page = () => {
         <SuccessStories />
         <TechnologiesSection />
         <CustomerInsights />
-        <ContactForm />
+
         <Footer />
       </div>
     </div>
