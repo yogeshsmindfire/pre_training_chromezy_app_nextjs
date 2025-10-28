@@ -1,0 +1,101 @@
+.client-feedback {
+  margin-top: 100px;
+  width: 85vw;
+
+  .feedback-header {
+    margin-bottom: -5px;
+  }
+  .description {
+    margin-bottom: 35px;
+  }
+}
+
+.feedback-cards {
+  display: flex;
+  gap: 60px;
+}
+
+.feedback-card {
+  transition: all 0.25s ease-in-out;
+  color: #fff;
+  background: rgb(255 255 255 / 12%);
+  border-radius: 18px;
+  width: 350px;
+  backdrop-filter: blur(8px);
+  height: 350px;
+  padding: 20px;
+
+  .description {
+    height: 130px;
+    margin-bottom: 0px;
+  }
+
+  .client-user-info {
+    text-align: right;
+    padding-right: 20px;
+
+    p {
+      margin: 0px auto;
+    }
+
+    .client-user-title {
+      font-weight: 100;
+      padding-bottom: 10px;
+      color: #b8bac5;
+    }
+
+    hr {
+      border: none;
+      background: #dcdcdc33;
+      height: 0.2px;
+    }
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .client-firm-details {
+    display: flex;
+    margin-top: 20px;
+
+    .project-details {
+      display: flex;
+      flex-direction: column;
+      font-size: 10px;
+      color: #b8bac5;
+    }
+
+    .client-logo {
+      width: 100px;
+      padding-left: 35px;
+      margin-top: -35px;
+    }
+  }
+}
+
+.feedback-card:hover {
+  background: rgb(255 255 255 / 22%);
+}
+
+@media (max-width: 768px) {
+  .client-feedback {
+    .feedback-header {
+      text-align: center;
+    }
+    .description {
+      text-align: center;
+    }
+
+    .feedback-cards {
+      flex-direction: column;
+      gap: 30px !important;
+
+      .feedback-card {
+        width: auto !important;
+        height: auto !important;
+      }
+    }
+  }
+}

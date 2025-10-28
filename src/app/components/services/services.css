@@ -1,0 +1,89 @@
+.services-container {
+  padding: 100px 10% 0px;
+  background-color: transparent;
+
+  .services-header {
+    width: 40%;
+  }
+}
+
+.services-content {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.mvp-services-card,
+.saas-services-card,
+.ai-services-card,
+.b2b-services-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 300px;
+  width: 250px;
+  border-radius: 12px;
+  padding: 12px;
+
+  img {
+    position: absolute;
+    color: transparent;
+    right: 5%;
+    top: 10%;
+  }
+
+  span {
+    background: #ffffff14;
+    padding: 6px 12px;
+    border: 0px;
+    border-radius: 18px;
+    color: white;
+    width: max-content;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  button {
+    background: black;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 26px;
+    position: sticky;
+    top: 100%;
+  }
+}
+
+.mvp-services-card {
+  background-color: #2f41a3;
+}
+
+.saas-services-card {
+  background-color: #7e2148;
+}
+
+.ai-services-card {
+  background-color: #aa7333;
+}
+
+.b2b-services-card {
+  background-color: #224a38;
+}
+
+@media (max-width: 768px) {
+  .services-header {
+    width: auto !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .services-content {
+    flex-direction: column;
+  }
+}

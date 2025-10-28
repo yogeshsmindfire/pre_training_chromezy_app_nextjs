@@ -1,0 +1,232 @@
+/* Footer.css */
+
+.footerContainer {
+  background-color: #0b0f19; /* Dark background from the image */
+  color: #a6a6a6; /* Light gray text for general content */
+  padding: 60px 80px 30px; /* Adjust padding as needed */
+  font-family: Arial, sans-serif; /* Example font */
+  width: 100vw;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  max-width: 1200px; /* Limit content width */
+  margin-left: auto;
+  margin-right: auto;
+  gap: 40px; /* Space between sections */
+}
+
+.footerSection {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Company Info Section */
+.companyInfo {
+  flex: 1.5; /* Give more space to company info */
+  max-width: 350px;
+}
+
+.companyLogo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #5d97f2; /* Blue color for logo from image */
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.companyDescription {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.companyLinks {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.linkSeparator {
+  margin: 0 10px;
+  color: #4a4a4a;
+}
+
+.contactInfo .contactItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contactIcon {
+  margin-right: 10px;
+  color: #5d97f2; /* Blue icon color */
+  font-size: 18px; /* Adjust icon size */
+}
+
+/* Navigation Links Section */
+.navigationLinks {
+  display: flex;
+  gap: 50px; /* Space between the two columns of links */
+  flex: 1.2;
+  justify-content: flex-end; /* Align to the right in its space */
+}
+
+.navColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerNavItem,
+.footerCtaItem {
+  color: #a6a6a6;
+  text-decoration: none;
+  font-size: 12px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px; /* Space for the arrow */
+  transition: color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.footerCtaItem:not(.highlight) {
+  color: #ffffff; /* Lighter on hover */
+}
+
+.footerNavItem:hover,
+.footerCtaItem:not(.highlight):hover {
+  color: #ffffff; /* Lighter on hover */
+}
+
+.footerNavItem .arrow,
+.footerCtaItem .arrow {
+  color: #4a4a4a; /* Darker arrow color */
+  margin-left: 15px;
+}
+
+/* Call to Action Section */
+.callToAction {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align to top */
+  flex: 0.8;
+  text-align: right; /* Align text to the right within its section */
+}
+
+.footerCtaItem {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 25px;
+  padding-right: 0; /* No extra padding for CTA items */
+}
+
+.footerCtaItem.highlight {
+  color: #5d97f2; /* Blue color for the "Work with us" button */
+  font-size: 20px; /* Larger font for highlight */
+}
+
+.footerCtaItem.highlight:hover {
+  color: #8ac0ff; /* Lighter blue on hover */
+}
+
+/* General Link Styling */
+.footerLink {
+  color: #a6a6a6;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footerLink:hover {
+  color: #ffffff;
+}
+
+/* Footer Bottom Section */
+.footerBottom {
+  border-top: 1px solid #2a2a2a; /* Subtle divider */
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #777; /* Slightly darker gray for bottom text */
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.copyright .separator {
+  margin: 0 8px;
+  color: #4a4a4a;
+}
+
+.designedBy {
+  color: #5d97f2;
+  text-decoration: none;
+}
+
+.designedBy:hover {
+  text-decoration: underline;
+}
+
+.socialMedia {
+  display: flex;
+  align-items: center;
+}
+
+.socialIcons {
+  margin-left: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.socialIcons a {
+  color: #a6a6a6;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.socialIcons a:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .footerContainer {
+    padding: 10px;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .footerContent {
+      flex-direction: column;
+      width: 80vw;
+
+      .companyDescription {
+        padding: 5px;
+      }
+
+      .navigationLinks {
+        gap: 10px !important;
+
+        .navColumn {
+          width: 40vw;
+          padding-left: 5px;
+        }
+      }
+    }
+
+    .footerBottom {
+      display: flow !important;
+
+      .copyright {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.clients {
+  ul {
+    display: flex;
+    gap: 80px;
+    list-style-type: none;
+  }
+}
+
+@media (max-width: 768px) {
+
+  ul {
+    flex-wrap: wrap;
+  }
+}

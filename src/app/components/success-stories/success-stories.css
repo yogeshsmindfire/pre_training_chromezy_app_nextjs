@@ -1,0 +1,183 @@
+/* components/SuccessStories.module.css */
+
+.success-stories {
+  background-color: transparent; /* Dark background */
+  color: #fff;
+  padding: 4rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  /* The aurora/light-leak effects are complex graphical assets.
+     This is a placeholder for that effect. */
+  background-image: radial-gradient(
+      circle at 10% 20%,
+      rgba(0, 150, 255, 0.1),
+      transparent 30%
+    ),
+    radial-gradient(circle at 90% 80%, rgba(80, 220, 100, 0.1), transparent 40%);
+}
+
+.container {
+  max-width: 1400px; /* Wider container for this layout */
+  margin: 0 auto;
+  display: flex;
+  margin-top: 50px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column for mobile */
+  gap: 1.5rem;
+  padding: 0px 100px;
+}
+
+.textBlock {
+  padding: 1rem;
+}
+
+.textBlock h1 {
+  font-size: 2.5rem; /* 40px */
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: -0.025em;
+}
+
+.textBlock p {
+  font-size: 1.125rem; /* 18px */
+  color: #a0a0a0;
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+.storyCard {
+  border-radius: 1.5rem; /* 24px */
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 300px;
+  width: 350px;
+}
+
+.storyCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* This creates a 4:3 aspect ratio. Adjust as needed. */
+  padding-bottom: 75%;
+  background-color: #333; /* Placeholder color */
+}
+
+.arrowButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2.5rem; /* 40px */
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+  transition: background-color 0.2s ease;
+}
+
+.arrowButton:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.cardContent {
+  background-color: #fff;
+  color: #111;
+  display: flex;
+  /* justify-content: start; */
+  flex-direction: column;
+  position: relative;
+  bottom: 90px;
+  /* right: 30px; */
+  border-top-right-radius: 18px;
+  padding-left: 20px;
+  width: 95%;
+  height: inherit;
+
+  p {
+    margin-top: 0px;
+    color: #141517;
+  }
+}
+
+.cardContent h3 {
+  font-size: 1.375rem; /* 22px */
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.cardContent p {
+  font-size: 0.875rem; /* 14px */
+  color: #555;
+}
+
+/* --- Desktop Grid Layout --- */
+
+@media (min-width: 1024px) {
+  .gridContainer {
+    /* The 3-column grid */
+    grid-template-columns: repeat(3, 1fr);
+    /* Define rows to allow items to span */
+    grid-template-rows: auto auto;
+    gap: 2rem;
+  }
+
+  /* Assign grid positions based on the image */
+  .textBlock {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center text */
+  }
+
+  .card1 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .card2 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+
+  .card3 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .card4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .card5 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .success-stories {
+    padding-top: 0px !important;
+
+    .storyCard {
+      width: 80vw !important;
+    }
+  }
+}
