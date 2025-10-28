@@ -1,16 +1,16 @@
 // components/SuccessStories.js
 
-"use client"; // For Next.js App Router
+'use client'; // For Next.js App Router
 
 import Image from 'next/image';
 import { ArrowUpRight } from 'lucide-react';
 import './success-stories.css';
 
-import successStories1 from "../../../../public/success-stories1.png";
-import successStories2 from "../../../../public/success-stories2.png";
-import successStories3 from "../../../../public/success-stories3.png";
-import successStories4 from "../../../../public/success-stories4.png";
-import successStories5 from "../../../../public/success-stories5.png";
+import successStories1 from '../../../../public/success-stories1.png';
+import successStories2 from '../../../../public/success-stories2.png';
+import successStories3 from '../../../../public/success-stories3.png';
+import successStories4 from '../../../../public/success-stories4.png';
+import successStories5 from '../../../../public/success-stories5.png';
 
 // Mock data for the success stories
 const storiesData = [
@@ -38,7 +38,8 @@ const storiesData = [
   {
     id: 'printwithai',
     title: 'PrintWithAI',
-    subtitle: 'Web-to-Print Software | Online Design Tool | Product Designer Tool',
+    subtitle:
+      'Web-to-Print Software | Online Design Tool | Product Designer Tool',
     imageUrl: successStories4, // Placeholder image path
     gridClass: 'card4',
   },
@@ -53,11 +54,11 @@ const storiesData = [
 
 const SuccessStories = () => {
   return (
-    <section className="success-stories">
-      <div className="container">
-        <div className="gridContainer">
+    <section className='success-stories'>
+      <div className='container'>
+        <div className='gridContainer'>
           {/* Text Block */}
-          <div className="textBlock">
+          <div className='textBlock'>
             <h1>SUCCESS STORIES</h1>
             <p>
               Dummy ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -67,23 +68,20 @@ const SuccessStories = () => {
 
           {/* Story Cards */}
           {storiesData.map((story) => (
-            <div
-              key={story.id}
-              className={`storyCard ${story.gridClass}`}
-            >
-              <div className="imageContainer">
+            <div key={story.id} className={`storyCard ${story.gridClass}`}>
+              <div className='imageContainer'>
                 <Image
                   src={story.imageUrl}
                   alt={story.title}
                   fill
                   style={{ objectFit: 'cover' }}
-                  sizes="(max-width: 768px) 100vw, 33vw"
+                  sizes='(max-width: 768px) 100vw, 33vw'
                 />
-                <button className="arrowButton">
+                <button className='arrowButton'>
                   <ArrowUpRight size={20} />
                 </button>
               </div>
-              <div className="cardContent">
+              <div className='cardContent'>
                 <h3>{story.title}</h3>
                 <p>{story.subtitle}</p>
               </div>

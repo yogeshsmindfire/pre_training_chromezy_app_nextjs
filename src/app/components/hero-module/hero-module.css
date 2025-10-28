@@ -85,7 +85,8 @@
   .hero-module {
     padding-top: 80px;
 
-    .info, .description {
+    .info,
+    .description {
       width: 80vw !important;
     }
   }

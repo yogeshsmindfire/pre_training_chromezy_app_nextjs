@@ -1,10 +1,10 @@
 // components/TechnologiesSection.js
 
-"use client"; // For Next.js App Router
+'use client'; // For Next.js App Router
 
 import styles from './technologies.module.css';
 
-import technologiesGraphic from "../../../../public/technologies-graphic.png";
+import technologiesGraphic from '../../../../public/technologies-graphic.png';
 import Image from 'next/image';
 
 // Data for the technologies list
@@ -12,7 +12,16 @@ const techData = [
   {
     id: '01',
     title: 'Web App Development',
-    tags: ['React', 'Node', 'Angular', 'Vue', 'Express.JS', 'AdobeXD', 'Figma', 'Whimsical'],
+    tags: [
+      'React',
+      'Node',
+      'Angular',
+      'Vue',
+      'Express.JS',
+      'AdobeXD',
+      'Figma',
+      'Whimsical',
+    ],
   },
   {
     id: '02',
@@ -32,7 +41,14 @@ const techData = [
   {
     id: '05',
     title: 'Data & Cloud',
-    tags: ['Azure', 'AWS', 'Docker', 'Kubernetes', 'Google Cloud', 'Ola Krutrim'],
+    tags: [
+      'Azure',
+      'AWS',
+      'Docker',
+      'Kubernetes',
+      'Google Cloud',
+      'Ola Krutrim',
+    ],
   },
 ];
 
@@ -49,7 +65,14 @@ const TechnologiesSection = () => {
           </p>
           <div className={styles.imagePlaceholder}>
             {/* You would place your <Image> component here */}
-            <span><Image src={technologiesGraphic} alt="Technologies Graphic" height={300} width={300} /></span>
+            <span>
+              <Image
+                src={technologiesGraphic}
+                alt='Technologies Graphic'
+                height={300}
+                width={300}
+              />
+            </span>
           </div>
         </div>
 

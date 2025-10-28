@@ -1,28 +1,31 @@
-import "./hero-module.css";
+import './hero-module.css';
 
-import { Sora } from "next/font/google";
+import { Sora } from 'next/font/google';
 
-import { FaMagic } from "react-icons/fa";
+import { FaMagic } from 'react-icons/fa';
 
-const sora = Sora({ subsets: ["latin"] });
+const sora = Sora({ subsets: ['latin'] });
 
 const HeroModule = () => {
   return (
-    <section className="hero-module" style={{ fontFamily: sora.style.fontFamily }}>
-      <div className="intro">
+    <section
+      className='hero-module'
+      style={{ fontFamily: sora.style.fontFamily }}
+    >
+      <div className='intro'>
         <FaMagic />
         <span>Introducing AI Automation</span>
       </div>
-      <div className="tag-line">
+      <div className='tag-line'>
         <span>
-          from <span style={{ color: "#11DEFF" }}>CONCEPT</span> to{" "}
-          <span style={{ color: "#4380FF" }}>REALITY</span>
+          from <span style={{ color: '#11DEFF' }}>CONCEPT</span> to{' '}
+          <span style={{ color: '#4380FF' }}>REALITY</span>
         </span>
       </div>
-      <div className="info">
+      <div className='info'>
         <span>We Engineer your software success to digital transformation</span>
       </div>
-      <div className="description">
+      <div className='description'>
         <span>
           At Chromezy, we translate your ideas into market-ready solutions
           quickly and precisely. Laveraging the power of technology and
@@ -30,7 +33,7 @@ const HeroModule = () => {
           and user-centric.
         </span>
       </div>
-      <div className="stats">
+      <div className='stats'>
         <div>
           <span>200%</span>
           <span>Revenue Growth</span>

@@ -4,11 +4,9 @@ import Image from 'next/image';
 import { ArrowUpRight } from 'lucide-react';
 import styles from './customer-insights.module.css';
 
-import insightsImage1 from "../../../../public/insghts-1.png";
-import insightsImage2 from "../../../../public/insghts-2.png";
-import insightsImage3 from "../../../../public/insghts-3.png";
-
-
+import insightsImage1 from '../../../../public/insghts-1.png';
+import insightsImage2 from '../../../../public/insghts-2.png';
+import insightsImage3 from '../../../../public/insghts-3.png';
 
 const insightsData = [
   {
@@ -30,7 +28,8 @@ const insightsData = [
   {
     id: 3,
     image: insightsImage3, // Placeholder image path
-    title: 'Optimizing E-commerce Sales With AI-Driven Product Recommendations.',
+    title:
+      'Optimizing E-commerce Sales With AI-Driven Product Recommendations.',
     description:
       'Boost your e-commerce sales with AI-powered product recommendations. Learn how smart algorithms can enhance customer experience and drive conversions. Read our blog for actionable insights!',
     link: '#', // Replace with actual link
@@ -43,19 +42,26 @@ const CustomerInsights = () => {
       <div className={styles.contentWrapper}>
         <div className={styles.header}>
           <h1>FEATURED INSIGHTS</h1>
-          <p>Were you looking to explore a specific topic? You&apos;re in the right spot.</p>
+          <p>
+            Were you looking to explore a specific topic? You&apos;re in the
+            right spot.
+          </p>
         </div>
 
         <div className={styles.insightsGrid}>
           {insightsData.map((insight) => (
-            <a href={insight.link} key={insight.id} className={styles.insightCard}>
+            <a
+              href={insight.link}
+              key={insight.id}
+              className={styles.insightCard}
+            >
               <div className={styles.imageContainer}>
                 <Image
                   src={insight.image}
                   alt={insight.title}
                   fill
                   style={{ objectFit: 'cover' }}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                 />
               </div>
               <div className={styles.cardContent}>

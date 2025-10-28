@@ -6,15 +6,13 @@
   padding: 4rem 1.5rem;
   position: relative;
   overflow: hidden;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
   /* The aurora/light-leak effects are complex graphical assets.
      This is a placeholder for that effect. */
-  background-image: radial-gradient(
-      circle at 10% 20%,
-      rgba(0, 150, 255, 0.1),
-      transparent 30%
-    ),
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(0, 150, 255, 0.1), transparent 30%),
     radial-gradient(circle at 90% 80%, rgba(80, 220, 100, 0.1), transparent 40%);
 }
 
@@ -54,7 +52,9 @@
   border-radius: 1.5rem; /* 24px */
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   height: 300px;
   width: 350px;
 }

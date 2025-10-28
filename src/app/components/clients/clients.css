@@ -7,7 +7,6 @@
 }
 
 @media (max-width: 768px) {
-
   ul {
     flex-wrap: wrap;
   }

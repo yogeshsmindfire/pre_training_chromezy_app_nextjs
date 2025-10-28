@@ -54,7 +54,8 @@
 }
 
 @media (max-width: 768px) {
-  .main, .content-container {
+  .main,
+  .content-container {
     overflow: hidden;
   }
   .content-container {
