@@ -33,28 +33,28 @@ const Page = () => {
     };
   }, []);
 
+  const ballStyle = {
+    transform: `translate(${scrollPosition < 1370 ? `${scrollPosition * -0.2}px, ${scrollPosition * 0.1}px` : `-800, 0`})`,
+    zIndex: scrollPosition > 600 && scrollPosition < 1370 ? 99 : 9999,
+    width: scrollPosition > 600 && scrollPosition < 1370 ? '400px' : '200px',
+    height: scrollPosition > 600 && scrollPosition < 1370 ? '400px' : '200px',
+  };
+
   return (
     <div className='main'>
       <NavigationBar scrollPosition={scrollPosition} />
       <div className='background-container'>
-        <Image
-          src={Triangle}
-          alt='triangle'
-          id='triangle'
-          style={{
-            transform: `translateY(${scrollPosition * -0.05}px)`,
-          }}
-        />
-        <Image
-          src={Ball}
-          alt='ball'
-          id='ball'
-          style={{
-            transform: `translate(${scrollPosition * -0.05}px, ${
-              scrollPosition * 0.05
-            }px)`,
-          }}
-        />
+        <div className='background-filter'>
+          <Image
+            src={Triangle}
+            alt='triangle'
+            id='triangle'
+            style={{
+              transform: `translateY(${scrollPosition * -0.05}px)`,
+            }}
+          />
+        </div>
+        <Image src={Ball} alt='ball' id='ball' style={ballStyle} />
       </div>
       <div className='content-container'>
         <HeroModule />

@@ -84,6 +84,6 @@ describe('Page', () => {
     expect(triangleImage).toHaveStyle('transform: translateY(-25px)');
 
     const ballImage = screen.getByAltText('ball');
-    expect(ballImage).toHaveStyle('transform: translate(-25px, 25px)');
+    expect(ballImage).toHaveStyle('transform: translate(-100px, 50px)');
   });
 });
